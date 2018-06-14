@@ -82,14 +82,14 @@ You can also use it programatically via:
 const fetch = require('crypto-ml-alerts')
 
 async function main () {
-	try {
-		const signals = await fetch()
-		console.log(JSON.stringify(signals, null, '  '))
-	}
-	catch (e) {
+    try {
+        const signals = await fetch()
+        console.log(JSON.stringify(signals, null, '  '))
+    }
+    catch (e) {
         console.error(e)
         process.exit(-1)
-	}
+    }
 }
 
 main()
