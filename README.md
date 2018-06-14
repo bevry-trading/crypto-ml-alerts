@@ -27,7 +27,7 @@
 
 <!-- DESCRIPTION/ -->
 
-Fetch the alerts from crypto-ml.com
+Fetch the alerts from https://crypto-ml.com
 
 <!-- /DESCRIPTION -->
 

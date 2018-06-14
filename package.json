@@ -1,7 +1,7 @@
 {
   "name": "crypto-ml-alerts",
   "version": "1.0.0",
-  "description": "Fetch the alerts from crypto-ml.com",
+  "description": "Fetch the alerts from https://crypto-ml.com",
   "homepage": "https://github.com/bevry-trading/crypto-ml-alerts",
   "license": "MIT",
   "keywords": [
