@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+node_js:
+- '10'
+matrix:
+  fast_finish: true
+  allow_failures: []
+cache:
+  directories:
+  - "$HOME/.npm"
+  - "$HOME/.yarn-cache"
+install:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-install.bash)"
+before_script:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-verify.bash)"
+after_success:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-publish.bash)"
+notifications:
+  slack:
+    secure: CRY0qGIrXEJ7r3cqvlE+5WaqxJ4lFiBXyWv1Pfm9mJ5inl1VfSU0TcESAUhu0Ft90lH+P/B/6Cf5G9S3FH101Dn40YtDu3nokQCW6MZE9hJ1kZ4zlyPn24zympWe56yFvdYNsDMbczDKDW1JurSIRx7snGpY2fcVB+3IltRiD6d9kLqTymGHbGdW4RrI+VZ7apU/K8HId1dL1Xs2s6Ks8i07gu+kNg0kREt2Jzt9PSkdlStdGIDaazmpTCFdLVNNJtmS6Dl/mVVWy6OXUavOew2Awkzw5mNgF//YefwcOkHqHtCittYVqtidBN+5qaIoPfu7Ffrt5d7XV/GFKKtpoM3Pq3I5UxLGId2JVwMNE5SFNIsJqdfldYg9fyjd4qlRB5BX8LRmXMnCcGg3FWf6NnVNXxRjS2iwOpWroDG+iTqaDnnRo08Rd8HunABDfIVOx4H6N/2sLsCOhqNOkha0Q72o3FUY2ppU1DeUD90A3M+HWXEGoKa633CO+Ad+/b7rXham4uAEqULSM00hakEJm0+r/PXowgW3LWPsE7ecBbDR2Z0XDlsAOWHzfhob/UlvVBkYJpJKPZl/cMcAljTndML+JMB7tmAfGO2ZX6J6HQyyKCJeEwh2djkIDNHIPKLfbPnjBEAZHSkWedaOiK6A9qXs6d9SF25POipHNhoBQ8c=
+  email:
+    recipients:
+      secure: cmuBwJUivOUE45cQBkcDMYkn08yWqsjROV1eXBwP3rnhBvFQNp0jcfrrgLXzNtL4P6mPto3ZvfqPd+7lZf/5gTsesvG6q2CcAJLQMFNkZcmCB7/Ra2nglfTx5tDMmRL42vZF6i1fMPu0mdkJ2NizDtloshImll9gACwA+RFqdMJUQPLg3drqcm+21UFih0rHYvG6pCXpQF2/B9nlE5ghmJiqUqQe9AQxuRrNhC2QJu+zPAmO3cm7MwzYIewhGvLduolNOk1U1V5DBkPI3EGUgeHpSTzcSqy5mWeDtDpAlQzeSPkGK/utgo8b4mMs6stbQTU6NNaoPyNDG4mNJPdKhw9EMaOjfG5Udi/QruI0lWuwEC3jcxqrnfOYthzFGv4As2kYAgfWG2/A3eEy2DzGVzwpxmIz83zdV4WF591LT9rPQjhgEATOowJX471YdVTtAasIk9XIE2XCPt7HeoosX+SBLnOJ/p40HBv5gNmLd9tv1QPOMNn9Wjhh0tgFK7JTqVvs2PWU1ty3lqallGvWZPt8ikqs1KOfPnL2ucIKh3ihHOOWIfgGZVqMTvbtlRCtIO8wM5ts+fAz9L01OXQpmrJeOujwELMdzQeYk+O/57bbyA5JL8+BDQSwmXiv1sjskR5zv6WxOdSK4HK0Akh/kKomAPdULybia9ceRE++uQc=
