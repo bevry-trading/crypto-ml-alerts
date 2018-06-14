@@ -21,7 +21,6 @@ if (!username || !password) {
 	process.exit(-1)
 }
 
-const { isError } = require('typechecker')
 const puppeteer = require('puppeteer')
 
 /*

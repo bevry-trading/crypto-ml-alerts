@@ -75,8 +75,7 @@
   "bin": "bin.js",
   "main": "source/index.js",
   "dependencies": {
-    "puppeteer": "^1.5.0",
-    "typechecker": "^4.5.0"
+    "puppeteer": "^1.5.0"
   },
   "devDependencies": {
     "assert-helpers": "^4.5.1",
@@ -106,5 +105,7 @@
     "start": "env TZ=Etc/UTC ./bin.js"
   },
   "maintainers": [],
-  "contributors": []
+  "contributors": [
+    "Benjamin Lupton (http://balupton.com)"
+  ]
 }

@@ -37,8 +37,8 @@ Fetch the alerts from crypto-ml.com
 <h2>Install</h2>
 
 <a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>NPM</h3></a><ul>
-<li>Install: <code>npm install --save crypto-ml-alerts</code></li>
-<li>Module: <code>require('crypto-ml-alerts')</code></li></ul>
+<li>Install: <code>npm install --global crypto-ml-alerts</code></li>
+<li>Executable: <code>crypto-ml-alerts</code></li></ul>
 
 <h3><a href="https://github.com/bevry/editions" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
 
@@ -135,11 +135,25 @@ No sponsors yet! Will you be the first?
 
 <h3>Contributors</h3>
 
-No contributors yet! Will you be the first?
+These amazing people have contributed code to this project:
+
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry-trading/crypto-ml-alerts/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry-trading/crypto-ml-alerts">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry-trading/crypto-ml-alerts/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
 <!-- /BACKERS -->
 
 
-<!--LICENSE -->
+<!-- LICENSE/ -->
+
+<h2>License</h2>
+
+Unless stated otherwise all works are:
+
+<ul><li>Copyright &copy; 2018+ Benjamin Lupton</li></ul>
+
+and licensed under:
+
+<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
+
+<!-- /LICENSE -->
